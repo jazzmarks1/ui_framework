@@ -1,0 +1,36 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$font-stack: 'Arial', sans-serif;
+
+// Mixin for border radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Base Styles
+body {
+    font-family: $font-stack;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: $text-color;
+}
+
+// Header Styles
+header {
+    background: $primary-color;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-top: 15px;
+
+        ul {
